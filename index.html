@@ -26,6 +26,10 @@ font-weight: 700;
 color: rgb(19, 19, 19);
 }
 
+.text-light-gray{
+color: #727272;
+
+}
 
 .btn-primary{
 
@@ -196,6 +200,34 @@ color: #727272;
 
 }
 
+/* sponsors styles */
+
+
+.sponsors{
+text-align: center;
+
+}
+
+.sponsors-img-container{
+display: flex;
+justify-content: space-evenly;
+
+margin-top: 50px;
+gap: 20px;
+
+
+align-items: center;
+
+
+}
+
+.sponsors-img-container img{
+width: 165px;
+
+
+}
+
+
 @media screen and (max-width:576px) {
     
 
@@ -205,7 +237,7 @@ color: #727272;
     
     }
     
-    nav, .teams-container{
+    nav, .teams-container, .facts-card-container, .sponsors-img-container{
     flex-direction: column;
     
     }
@@ -214,15 +246,25 @@ grid-template-columns: 1fr;
 
 }
 
-.teams-content{
-
+.teams-content, .facts-card-container, .sponsors-img-container{
 padding-left: 20px;
 padding-right: 20px;
 }
 
-    
-    
-    }
+
+.facts-card-container{
+gap: 5px;
+
+}
+
+
+
+
+
+
+  }
+
+
     /* tablet or medium devices */
     
     @media  screen and (min-width: 576px) and (max-width: 960px) {
@@ -232,11 +274,10 @@ padding-right: 20px;
     padding: 50px;
     
         }
-        nav, .teams-container{
+        nav, .teams-container, .sponsors-img-container{
     flex-direction: column;
     
         }
-
 
     }
 
@@ -349,6 +390,31 @@ G3 Architects
 </div>
 
 </section>
+
+<!-- sponsor section -->
+<section class="sponsors">
+<h3 class="section-title">Our Sponspors</h3>
+<p class="text-light-gray">
+
+    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+</p>
+
+<div class="sponsors-img-container">
+
+
+<img src="images/sponsors/spotify.png" alt="">
+<img src="images/sponsors/amazon.png" alt="">
+<img src="images/sponsors/google.png" alt="">
+<img src="images/sponsors/telerama.png" alt="">
+<img src="images/sponsors/figma.png" alt="">
+
+
+</div>
+
+
+</section>
+
+
 
 
 </main>
