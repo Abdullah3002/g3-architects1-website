@@ -157,6 +157,45 @@ color: #727272;
 }
 
 
+/* facts-section */
+.facts-card-container{
+display: flex;
+
+justify-content: space-around;
+
+} 
+
+.facts-card-container .card{
+
+border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+
+padding: 30px;
+}
+.facts-card-container .card-title{
+
+font-weight: 600;
+font-size: 1.25rem;
+margin-top: 5px;
+
+}
+
+
+
+.facts-card-container .card-stats{
+font-size: 2.8rem;
+color: rgb(66, 66, 66);
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.card-title{
+color: #727272;
+
+}
+
 @media screen and (max-width:576px) {
     
 
@@ -272,9 +311,6 @@ G3 Architects
 </section>
 <!-- features section -->
 <section class="features">
-
-
-
 </section>
 
 <!-- section facts -->
@@ -287,8 +323,32 @@ G3 Architects
     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
 
 </p>
-</section>
+<div class="facts-card-container">
+<!-- .card*4>img+h2.card-stats+p.card-title -->
+<div class="card">
+    <img src="images/icons/ribon.png" alt="">
+    <h2 class="card-stats">54</h2>
+    <p class="card-title">Awards Winnings</p>
+</div>
+<div class="card">
+    <img src="images/icons/projects.png" alt="">
+    <h2 class="card-stats">1458</h2>
+    <p class="card-title">Project Finished</p>
+</div>
+<div class="card">
+    <img src="images/icons/customers.png" alt="">
+    <h2 class="card-stats">590</h2>
+    <p class="card-title">Clients Worked</p>
+</div>
+<div class="card">
+    <img src="images/icons/email.png" alt="">
+    <h2 class="card-stats">22578</h2>
+    <p class="card-title">Email Send</p>
+</div>
 
+</div>
+
+</section>
 
 
 </main>
